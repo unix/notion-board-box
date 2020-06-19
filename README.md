@@ -8,10 +8,10 @@
 
 ## What is
 
-I'm big fan of Notion, and I enjoy recording my worksor goals on the Notion board.
+I'm big fan of Notion, and I enjoy recording my works or goals on the Notion board.
 
 This project helps you automatically synchronize Notion's baord infomation to the GitHub home page (Gist),
-you can browse how it works on my GitHub home page. It updates infomation every `15` minutes now,
+you can browse how it works on my GitHub home page. It updates infomation every `15 minutes`,
 you can also change the [settings](https://github.com/unix/notion-board-box/blob/77b57507ca71dd0ab1e1a3260dfebfa617f0dd09/.github/workflows/goals.yml#L7) yourself.
 
 <br/>
@@ -31,10 +31,12 @@ modify the configs as you like, and it work.
 
 <br />
 
-## Environment Secrets
+## Parameters in yaml file
 
   - `GH_TOKEN`: The GitHub token generated above, you can configure it in project's `settings/secrets`.
-
+  - `id`: Your Gist id.
+  - `page`: Your Notion page id.
+  - `url`: External links, support for markdown syntax.
 
 <br />
 
