@@ -5,7 +5,7 @@ import { getNotionTable, updateGist, getRandomEmoji } from '../utils'
 @SubOptions([
   { name: 'id', type: String },
   { name: 'page', type: String },
-  { name: 'title', type: String },
+  { name: 'url', type: String },
 ])
 export class Major {
   private token: string
