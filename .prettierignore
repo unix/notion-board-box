@@ -1,5 +1,0 @@
-.github
-.circleci
-dist
-*.d.ts
-*.snap
