@@ -12,7 +12,9 @@ export interface NotionBoardGistData {
 }
 
 export const getNotionTable = async (id: string): Promise<NotionBoardGistData> => {
-  const data = await fetch(`https://notion-api.splitbee.io/v1/table/${id}`)
+  const data = await fetch(`https://notion-api.splitbee.io/v1/table/${id}`, {
+    headers: { 'Cache-Control': 'no-store' },
+  })
   const table = await data.json()
   if (!Array.isArray(table)) {
     throw new Error('The Nition page must contain a "board".')
